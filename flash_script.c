@@ -166,6 +166,7 @@ int main(void)
                     printf("刷机完成，正在开机...\n");
                     printf("执行完毕，按回车键回到主页...");
                     getchar();
+                    break;
                 case 2:
                     if (OS_FLAG == "Windows")
                     {
@@ -176,7 +177,7 @@ int main(void)
                         printf("      https://cheng.xz.cn\n");
                         printf("按回车键返回主菜单");
                         getchar();
-                        continue;
+                        break;
                     }
                     else
                     {
@@ -185,12 +186,12 @@ int main(void)
                         printf("      https://cheng.xz.cn\n");
                         printf("按回车键返回主菜单");
                         getchar();
-                        continue;
+                        break;
                     }
                 default:
                     printf("输入有误,请重试!");
                     getchar();
-                    continue;
+                    break;
             }
         }
         else
